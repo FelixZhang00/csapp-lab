@@ -1,0 +1,2 @@
+movq 0x602320,%rax
+movq %rax,0x602308
