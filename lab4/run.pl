@@ -16,6 +16,12 @@ my $cmd = [ { name => 'Java int',
 	    { name => 'Optimized C',
 	      cmd => "gcc -Wall -O2 cacheExperiment.c && $TIME ./a.out 2>&1",
 	    },
+	    { name => 'print-sum C',
+	      cmd => "gcc -Wall print-sum.c && $TIME ./a.out 2>&1",
+	    },
+	    { name => 'print-sum Optimized C',
+	      cmd => "gcc -Wall -O2 print-sum.c && $TIME ./a.out 2>&1",
+	    },
 	  ];
 
 foreach my $entry (@{$cmd}) {
